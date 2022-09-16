@@ -101,6 +101,12 @@ function resetGame() {
 }
 
 
+function gameStatus(win, losses) {
+    if (win >= 5 || losses >= 5) {    
+        final_result = resetGame()
+    };
+}
+
 var win_count = 0;
 var draw_count = 0;
 var loss_count = 0;
@@ -121,6 +127,7 @@ var computerScore = document.querySelector('#computer.score');
 ////////////    Game Events   ///////////////////////
 
 function playRock(e) {
+    gameStatus(win_count, loss_count)
     // Get Winner
     var computerSelection = getComputerChoice()
     roundWinDecider("Rock", computerSelection)
@@ -134,6 +141,8 @@ rock.addEventListener('click', playRock);
 
 /////////////////
 function playPaper(e) {
+    gameStatus()
+
     // Get Winner
     var computerSelection = getComputerChoice()
     roundWinDecider("Paper", computerSelection)
@@ -148,6 +157,8 @@ paper.addEventListener('click', playPaper);
 
 ///////////////
 function playScissors(e) {
+    gameStatus()
+
     // Get Winner
     var computerSelection = getComputerChoice()
     roundWinDecider("Scissors", computerSelection)

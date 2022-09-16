@@ -1,0 +1,174 @@
+@font-face {
+    font-family: marioKart;
+    src: url(Mario-Kart-DS.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: marioKart;
+    /* border-color: red;
+    border-style: solid;
+    border-width: 1px; */
+  }
+
+body {
+    height: 100vh;
+    margin: 0;
+    overflow: auto;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    background-color: rgb(231, 187, 74);
+}
+
+/* Header */
+.header-container {
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    font-size: 32px;
+    font-family: 'Press Start 2P', cursive;
+    background-color:  #1F2937;
+}
+
+.header-title {
+    font-size: 80px;
+    color: #fdd536;
+    font-family: marioKart;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+/* Scoreboard  */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+/* Title & Instructions  */
+.description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    margin: 0;
+    height: 120px
+}
+
+.title {
+    flex: 0 0 0;
+    font-size: 60px;
+    text-align: center;
+}
+
+.instructions {
+    flex: 0 0 0;
+    font-size: 30px;
+    text-align: center;
+    /* padding: 15px; */
+    min-width: 20vw;
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-between;
+    flex: 0;
+    gap: 45px;
+}
+
+#player.score-container,
+#computer.score-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0;
+    padding: 30px;
+    justify-content: center;
+    border-radius: 20px;
+    background-color:  rgba(81, 61, 7, 0.217);
+
+}
+
+.hand {
+    text-align: center;
+    padding: 70px;
+    margin: 20px;
+    font-size: 120px;
+
+    border-radius: 15px;
+    background-color: rgba(9, 77, 76, 0.227);
+}
+
+.score {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+/* Buttons */
+.button-section {
+    display: flex;
+    padding: 100px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    background-color: black;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    gap: 75px;
+    padding: 40px;
+    margin: 0px 500px;
+    border-radius: 15px;
+    background-color: rgba(118, 88, 11, 0.511);
+}
+
+.button {
+    height: 200px;
+    width: 200px;
+    font-size: 30px;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 70px;
+    border-color: rgb(173, 110, 29);
+    background-color: #fac650;
+    font-family: marioKart;
+    box-shadow: 8px 8px;
+    height: 160px;
+}
+
+#rock.button {
+    background-color: rgb(254, 75, 68);
+}
+
+#paper.button {
+    background-color: rgb(69, 177, 254);
+}
+
+#scissors.button {
+    background-color: rgb(76, 232, 48);
+}
+
+/* Footer Container */
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    height: 80px;
+    color: white;
+    font-weight: lighter;;
+}

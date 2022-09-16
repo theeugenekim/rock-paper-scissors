@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>✋ Rock, Paper, Scissors!</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class=header-container>
+        <div class="header-title">Rock Paper Scissors</div>
+    </div>
+
+    <div class="game-container">
+        <div class="description-container">
+            <div class="title"></div>
+            <div class="instructions"></div>
+        </div>
+
+        <div class="score-container">
+            <div id="player" class="score-container">
+                <div id="player" class="hand"></div>
+                <div id="player" class="score"></div>
+            </div>
+
+            <div id="computer" class="score-container">
+                <div id="computer" class="hand"></div>
+                <div id="computer" class="score"></div>
+            </div>
+        </div>
+    
+        <div class="button-container">
+            <button id="rock" class="button">Rock</button>
+            <button id="paper" class="button">Paper</button>
+            <button id="scissors" class="button">Scissors</button>
+        </div>
+    </div>
+    
+    <div class="footer-container">
+        <div class="footer-text">Copyright © theeugenekim 2022</div>
+    </div>
+
     <script src="rock-paper-scissors.js"></script>
 </body>
 </html>
